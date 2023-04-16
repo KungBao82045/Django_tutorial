@@ -1,4 +1,16 @@
 ## Lets get started!
+<details>
+<summary>🚨  Løsningsforslag</summary>
+Endre hva som står inni `res.send()` så det ser slik ut:
+
+```javascript
+app.get('/', function(request, response){
+	response.send('Velkommen til express-workshop');
+});
+
+```
+
+</details>
 
 Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html". Der skal det inneholde:
 
