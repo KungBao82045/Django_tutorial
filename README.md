@@ -109,6 +109,8 @@ def chatbot(request):
   return render(request, 'yourbot.html', context)
 
 ```
+HUSK Å ENDRE `pythonopenai.api_key = "API_KEY"` TIL DITT API KEY!
+
 
 Step 3: Gå til my_django_chatbot/chatbot_app/urls.py og erstatt koden til:
 ```python
