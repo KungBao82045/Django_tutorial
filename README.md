@@ -59,7 +59,7 @@ Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_ap
 
 ```
 
-Siden vi har lagd template til å bruke HTML, CSS, JS. Må vi si til Django at vi vi har lagd en app. Derfor må vi endre noe i my_django_chatbot/my_django_chatbot/settings.py og legg til "chatbot_app":
+For å lage komplisert prosjekt, my vi til my_django_chatbot/my_django_chatbot/settings.py og legg til "chatbot_app":
 
 ```python
 INSTALLED_APPS = [
@@ -72,6 +72,9 @@ INSTALLED_APPS = [
     "chatbot_app"
 ]
 ```
+
+Etter du har gjort det, skriv `py manage.py migrate`
+
 
 
 Step 2: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til:
