@@ -45,4 +45,4 @@ urlpatterns = [
 ]
 ```
 
-<p style="color: red;">Yo</p>
+<p style="color: red">Yo</p>
