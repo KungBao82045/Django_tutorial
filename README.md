@@ -55,8 +55,6 @@ Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_ap
 </html>
 
 
-<!-- Django syntax representerer {{ }} -->
-<!-- Brukes til dynamisk web sider -->
 
 ```
 
