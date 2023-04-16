@@ -34,19 +34,19 @@ Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_ap
         <div class="main">
             <h1>You Are Talking To ShadowBOT</h1>
             <div class="user_response">
-                <form method="post">
-                    {% csrf_token %} <!-- Security token when sending API -->
-                    <label for="user_input">Enter your input:</label>
-                    <input type="text" id="user_input" name="user_input">
-                    <button type="submit">Submit</button>
+                <form method="post">                                         <!-- Kaller method="post" for at views.py henter input fra nettsiden -->
+                    {% csrf_token %}                                         <!-- Security token when sending API -->
+                    <label for="user_input">Enter your input:</label>        
+                    <input type="text" id="user_input" name="user_input">    <!-- her har jeg definert id for at django views.py kan få hente input -->
+                    <button type="submit">Submit</button>                    <!-- Sender input til views.py -->
                 </form>
             </div>
 
             <br>
 
-            <div class="chatbot_response">
-                <p>You typed: {{ user_input }}</p>
-                <p>ShadowBOT: {{ reply_user }}</p>
+            <div class="chatbot_response">           
+                <p>You typed: {{ user_input }}</p>   <!-- Hva du har skrevet -->
+                <p>ShadowBOT: {{ reply_user }}</p>   <!-- Hva AI svarer -->
             </div>
 
         </div>
@@ -55,7 +55,8 @@ Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_ap
 </html>
 
 
-
+<!-- Django syntax representerer {{ }} -->
+<!-- Brukes til dynamisk web sider -->
 
 ```
 
