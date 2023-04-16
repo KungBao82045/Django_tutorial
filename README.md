@@ -1,6 +1,63 @@
 ## Lets get started!
 
-Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. 
+Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html". Der skal det inneholde:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPT website</title>
+        <style>
+            body {
+                background-image: url("");
+                background-color: black;
+            }
+            .main {
+                margin: 50px;
+                padding: 50px;
+                background-color: lightgreen;
+            }
+            .user_response {
+                background-color: lightcoral;
+                padding: 50px;
+            }
+            .chatbot_response {
+                background-color: lightblue;
+                padding: 50px;
+            }
+            h1, p, button, input, label {
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h1>You Are Talking To ShadowBOT</h1>
+            <div class="user_response">
+                <form method="post">
+                    {% csrf_token %} <!-- Security token when sending API -->
+                    <label for="user_input">Enter your input:</label>
+                    <input type="text" id="user_input" name="user_input">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <br>
+
+            <div class="chatbot_response">
+                <p>You typed: {{ user_input }}</p>
+                <p>ShadowBOT: {{ reply_user }}</p>
+            </div>
+
+        </div>
+        
+    </body>
+</html>
+
+
+
+
+```
 
 Step 2: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til:
 
@@ -45,4 +102,4 @@ urlpatterns = [
 ]
 ```
 
-<span style="color:blue">some *blue* text</span>
+Step 4: 
