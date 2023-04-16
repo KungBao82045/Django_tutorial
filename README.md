@@ -83,7 +83,7 @@ Step 2: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til
 from django.shortcuts import render
 import openai
 
-def testing(request):
+def chatbot(request):
   
   user_input = request.POST.get('user_input')
 
