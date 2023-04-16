@@ -73,7 +73,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-Etter du har gjort det, skriv `py manage.py migrate`
+Etter du har gjort det, skriv `python3 manage.py migrate`
 
 
 
