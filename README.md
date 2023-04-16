@@ -1,9 +1,4 @@
 ## Lets get started!
-<details>
-<summary>🚨  Løsningsforslag</summary>
-moren din
-
-</details>
 
 Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html". Der skal det inneholde:
 
@@ -127,3 +122,9 @@ urlpatterns = [
 ```
 
 Step 4: For å gå på nettsiden din, skriv: `python3 manage.py runserver` på terminalen og trykk på http://127.0.0.1:8000/chatbot/ for å sjekke om koden funker. Prøv å si hei til chatbot.
+
+<details>
+<summary>/summary>
+SECRET LINK FOUND: https://youtu.be/m_nvfeGYbi8
+
+</details>
