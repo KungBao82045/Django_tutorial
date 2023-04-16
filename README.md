@@ -2,7 +2,7 @@
 
 Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. 
 
-```
+```python
 from django.shortcuts import render
 import openai
 
