@@ -59,6 +59,21 @@ Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_ap
 
 ```
 
+Siden vi har lagd template til å bruke HTML, CSS, JS. Må vi si til Django at vi vi har lagd en app. Derfor må vi endre noe i my_django_chatbot/my_django_chatbot/settings.py og legg til "chatbot_app":
+
+```python
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "chatbot_app"
+]
+```
+
+
 Step 2: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til:
 
 ```python
