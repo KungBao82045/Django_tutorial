@@ -102,4 +102,4 @@ urlpatterns = [
 ]
 ```
 
-Step 4: 
+Step 4: Skriv: `python3 manage.py runserver` for å sjekke at koden funker. Prøv å si hei til chatbot.
