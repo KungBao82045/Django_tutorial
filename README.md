@@ -1,14 +1,7 @@
 ## Lets get started!
 <details>
 <summary>🚨  Løsningsforslag</summary>
-Endre hva som står inni `res.send()` så det ser slik ut:
-
-```javascript
-app.get('/', function(request, response){
-	response.send('Velkommen til express-workshop');
-});
-
-```
+moren din
 
 </details>
 
