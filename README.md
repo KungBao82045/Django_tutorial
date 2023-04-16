@@ -121,4 +121,4 @@ urlpatterns = [
 ]
 ```
 
-Step 4: Skriv: `python3 manage.py runserver` på terminalen for å sjekke om koden funker. Prøv å si hei til chatbot.
+Step 4: For å gå på nettsiden din, skriv: `python3 manage.py runserver` på terminalen og trykk på http://127.0.0.1:8000/chatbot/ for å sjekke om koden funker. Prøv å si hei til chatbot.
