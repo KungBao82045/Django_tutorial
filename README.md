@@ -117,7 +117,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('chatbot/', views.chatbot, name='chatbot'), # Lage ny link brukere kan navigere til
+    path('chatbot/', views.chatbot, name='chatbot'), # Lage ny link brukere kan navigere til http://127.0.0.1:8000/chatbot/
 ]
 ```
 
