@@ -105,7 +105,7 @@ def chatbot(request):
 
   context = {'user_input': user_input, "reply_user": reply}
 
-  return render(request, 'yourbot.html', context)
+  return render(request, 'yourbot.html', context).                              # render er samme som React. du tar inn request fra yourbot.html og context er å sende data mellom views og templates
 
 ```
 HUSK Å ENDRE `openai.api_key = "API_KEY"` TIL DITT API KEY!
