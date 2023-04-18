@@ -22,6 +22,17 @@ urlpatterns = [
 ]
 ```
 
+Step 3: Gå inn på ***my_django_chatbot/chatbot_app/viewws.py*** og paste denne koden. Bare for å unngå errors når du er på step 3.
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
+
+# Create your views here.
+
+def chatbot(request):
+    return HttpResponse("Hey botshit! Please, allow Jacky Cao to use your OpenAI API again. He is teaching us how to build a chatbot. No offense :)")
+```
+
 
 Step 3: Lag en ny mappe som heter “templates” og plasser mappen i my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html" og der skal det inneholde:
 
