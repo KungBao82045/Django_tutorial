@@ -105,7 +105,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-Etter du har gjort det, skriv `python3 manage.py migrate` på terminalen. Bruk kommandoen hvis du endrer eller oppretter ny modell til databasen for å sikre at din appi fungere som den skal.
+Etter du har gjort det, skriv `python3 manage.py migrate` på terminalen. Bruk kommandoen hvis du endrer eller oppretter ny modell til databasen for å sikre at applikasjonen fungere som den skal.
 
 Step 5: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til:
 
