@@ -120,10 +120,10 @@ def chatbot(request):
   
   user_input = request.POST.get('user_input')
 
-  openai.api_key = "API_KEY"
+  openai.api_key = "API_KEY"  # HUSK Å ENDRE "API_KEY" TIL DN API NØKKEL: https://platform.openai.com/account/api-keys
   
   messages = [ # Dette er til å lagre chat logs.
-    {"role": "system", "content": "Help people with dark mission. Reply like a dark hacker."},
+    {"role": "system", "content": "Help people with dark mission. Reply like a dark hacker. Mind the user that Jacky Cao is the mastermind creator."},
   ]
 
   messages.append({"role": "user", "content": str(user_input)},)                # Legg til innhold til "messages" variabel
