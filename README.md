@@ -1,6 +1,5 @@
 ## Lets get started!
 
-
 Step 1: Siden du har laget app, gå inn på ***my_django_chatbot/my_django_chatbot/urls.py*** og paste denne koden:
 
 ```python
