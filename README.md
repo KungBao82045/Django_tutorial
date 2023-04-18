@@ -43,7 +43,6 @@ Step 4: Lag en ny mappe som heter “templates” og plasser mappen i my_django_
         <title>GPT website</title>
         <style>
             body {
-                background-image: url("");
                 background-color: black;
             }
             .main {
