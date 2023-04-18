@@ -25,7 +25,7 @@ urlpatterns = [
 Step 3: Gå inn på ***my_django_chatbot/chatbot_app/viewws.py*** og paste denne koden. Bare for å unngå errors når du er på step 4.
 ```python
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse # httpresponse gjør at du kan sende svar til nettsiden til å vise noe til bruker
 
 # Create your views here.
 
