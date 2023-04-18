@@ -1,4 +1,4 @@
-## Lets get started!
+## Lets get started with Django!
 
 Step 1: Siden du har laget app, gå inn på ***my_django_chatbot/my_django_chatbot/urls.py*** og paste denne koden:
 
