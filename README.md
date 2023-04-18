@@ -152,6 +152,6 @@ Du kan hjelpe de andre elevene å bli ferdig også.
 
 <details>
 <summary></summary>
-SECRET LINK FOUND: https://youtu.be/m_nvfeGYbi8
+https://youtu.be/hdHjjBS4cs8
 
 </details>
