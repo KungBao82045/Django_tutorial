@@ -153,5 +153,7 @@ Du kan hjelpe de andre elevene å bli ferdig også.
 <details>
 <summary></summary>
 https://youtu.be/hdHjjBS4cs8
+Lær om Django: https://www.w3schools.com/django/index.php
+Lær om Python: https://www.w3schools.com/python/default.asp
 
 </details>
