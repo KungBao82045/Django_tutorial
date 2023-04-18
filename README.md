@@ -1,5 +1,10 @@
 ## Lets get started!
 
+
+Step 0: Siden du har laget app, gå inn på my_django_chatbot/my_django_chatbot/urls.py![image](https://user-images.githubusercontent.com/96529195/232849665-04d66199-8e3d-47aa-a06c-310799b3afb2.png)
+
+
+
 Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html". Der skal det inneholde:
 
 ```html
