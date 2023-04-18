@@ -158,6 +158,6 @@ Lær om Python: https://www.w3schools.com/python/default.asp
 </details>
 
 <details>
-    <summary>Kilder</summary>
+    <summary></summary>
     https://youtu.be/hdHjjBS4cs8
 </details>
