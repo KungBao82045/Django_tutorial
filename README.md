@@ -22,7 +22,7 @@ urlpatterns = [
 ]
 ```
 
-Step 3: Gå inn på ***my_django_chatbot/chatbot_app/viewws.py*** og paste denne koden. Bare for å unngå errors når du er på step 3.
+Step 3: Gå inn på ***my_django_chatbot/chatbot_app/viewws.py*** og paste denne koden. Bare for å unngå errors når du er på step 4.
 ```python
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -34,7 +34,7 @@ def chatbot(request):
 ```
 
 
-Step 3: Lag en ny mappe som heter “templates” og plasser mappen i my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html" og der skal det inneholde:
+Step 4: Lag en ny mappe som heter “templates” og plasser mappen i my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html" og der skal det inneholde:
 
 ```html
 <!DOCTYPE html>
@@ -110,7 +110,7 @@ Etter du har gjort det, skriv `python3 manage.py migrate`
 
 
 
-Step 4: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til:
+Step 5: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til:
 
 ```python
 from django.shortcuts import render
@@ -147,7 +147,7 @@ HUSK Å ENDRE `openai.api_key = "API_KEY"` TIL DITT API KEY!
 
 
 
-Step 5: For å gå på nettsiden din, skriv: `python3 manage.py runserver` på terminalen og trykk på http://127.0.0.1:8000/chatbot/ for å sjekke om koden funker. Prøv å si hei til chatbot.
+Step 6: For å gå på nettsiden din, skriv: `python3 manage.py runserver` på terminalen og trykk på http://127.0.0.1:8000/chatbot/ for å sjekke om koden funker. Prøv å si hei til chatbot.
 
 <details>
 <summary></summary>
