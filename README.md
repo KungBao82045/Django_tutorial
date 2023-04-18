@@ -81,7 +81,7 @@ Step 3: Lag en ny mappe som heter “templates” og plasser mappen i my_django_
 
 ```
 
-For å lage komplisert prosjekt, må vi til my_django_chatbot/my_django_chatbot/settings.py og legg til "chatbot_app":
+For å lage komplisert prosjekt, må vi til my_django_chatbot/my_django_chatbot/settings.py og legg til "chatbot_app". Dette sier til Django at du har lagd en app til å jobbe med:
 
 ```python
 INSTALLED_APPS = [
