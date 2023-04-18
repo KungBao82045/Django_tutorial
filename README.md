@@ -23,7 +23,7 @@ urlpatterns = [
 ```
 
 
-Step 3: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html". Der skal det inneholde:
+Step 3: Lag en ny mappe som heter “templates” og plasser mappen i my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html" og der skal det inneholde:
 
 ```html
 <!DOCTYPE html>
