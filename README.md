@@ -11,7 +11,8 @@ urlpatterns = [
 ]
 ```
 
-Step 2: Lag en fil som heter ***urls.py*** og plasser den i my_django_chatbot/chatbot_app/urls.py. Paste denne koden inn i filen:
+Step 2: Lag en fil som heter ***urls.py*** og plasser den i my_django_chatbot/chatbot_app/ 
+Paste denne koden inn i ***urls.py*** filen:
 ```python
 from django.urls import path
 from . import views
