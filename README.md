@@ -1,11 +1,29 @@
 ## Lets get started!
 
 
-Step 0: Siden du har laget app, gå inn på my_django_chatbot/my_django_chatbot/urls.py![image](https://user-images.githubusercontent.com/96529195/232849665-04d66199-8e3d-47aa-a06c-310799b3afb2.png)
+Step 1: Siden du har laget app, gå inn på ***my_django_chatbot/my_django_chatbot/urls.py*** og paste denne koden:
+
+```python
+from django.contrib import admin           # Tilgang til admin: http://127.0.0.1:8000/admin
+from django.urls import path, include      # path brukes til å legge til nye urls. include er samme, bare at du legger till app til å legge til urls.
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("", include("chatbot_app.urls"))
+]
+```
+
+Step 2: Gå til my_django_chatbot/chatbot_app/urls.py og erstatt koden til:
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('chatbot/', views.chatbot, name='chatbot'), # Lage ny link brukere kan navigere til http://127.0.0.1:8000/chatbot/
+]
+```
 
 
-
-Step 1: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html". Der skal det inneholde:
+Step 3: Lag en ny mappe som heter “templates” I my_django_chatbot/chatbot_app. Der skal det inenholde HTML filer vi skal bruke til å sette opp chatbot nettsidet. Inn i templates, lag en HTML fil kalt "yourbot.html". Der skal det inneholde:
 
 ```html
 <!DOCTYPE html>
@@ -81,7 +99,7 @@ Etter du har gjort det, skriv `python3 manage.py migrate`
 
 
 
-Step 2: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til:
+Step 4: Gå inn på my_django_chatbot/chatbot_app/views.py, og erstatt koden til:
 
 ```python
 from django.shortcuts import render
@@ -110,23 +128,15 @@ def chatbot(request):
 
   context = {'user_input': user_input, "reply_user": reply}
 
-  return render(request, 'yourbot.html', context).                              # render er samme som React. du tar inn request fra yourbot.html og context er å sende data mellom views og templates
+  return render(request, 'yourbot.html', context)                              # render er samme som React. du tar inn request fra yourbot.html og context er å sende data mellom views og templates
 
 ```
 HUSK Å ENDRE `openai.api_key = "API_KEY"` TIL DITT API KEY!
 
 
-Step 3: Gå til my_django_chatbot/chatbot_app/urls.py og erstatt koden til:
-```python
-from django.urls import path
-from . import views
 
-urlpatterns = [
-    path('chatbot/', views.chatbot, name='chatbot'), # Lage ny link brukere kan navigere til http://127.0.0.1:8000/chatbot/
-]
-```
 
-Step 4: For å gå på nettsiden din, skriv: `python3 manage.py runserver` på terminalen og trykk på http://127.0.0.1:8000/chatbot/ for å sjekke om koden funker. Prøv å si hei til chatbot.
+Step 5: For å gå på nettsiden din, skriv: `python3 manage.py runserver` på terminalen og trykk på http://127.0.0.1:8000/chatbot/ for å sjekke om koden funker. Prøv å si hei til chatbot.
 
 <details>
 <summary></summary>
