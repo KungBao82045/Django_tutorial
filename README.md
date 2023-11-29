@@ -148,12 +148,7 @@ Step 6: For å gå på nettsiden din, skriv: `python3 manage.py runserver` på t
 
 Du kan hjelpe de andre elevene å bli ferdig også.
 
-<details>
-<summary>Kilder</summary>
-Lær om Django: https://www.w3schools.com/django/index.php <br>
-Lær om Python: https://www.w3schools.com/python/default.asp
 
-</details>
 
 <details>
     <summary></summary>
